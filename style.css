@@ -83,7 +83,7 @@ body {
     }
     .todo-list-grid, .todo-input-grid {
       display: grid;
-      grid-template-columns: 100px 100px 60px;
+      grid-template-columns: 70px 70px 60px;
       column-gap: 10px;
       row-gap: 10px;
       align-items: center;
