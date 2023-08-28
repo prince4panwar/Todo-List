@@ -16,28 +16,36 @@ body {
     position: absolute;
     top: 100px;
     height: 80vh;
+    /* width: 40vw; */
     /* border: 2px solid black; */
     box-shadow: 5px 5px 50px black;
     padding: 0 20px;
     overflow-y: scroll;
+    overflow-x: hidden;
   }
   .nav h1{
     /* border: 2px solid black; */
     margin: 15px 0;
   }
   .top{
+    border: 2px solid transparent;
     position: sticky;
+    /* width: 37.5vw; */
     top: 0;
     background-color: white;
     padding-bottom: 10px;
   }
   .todo-list-grid, .todo-input-grid {
     display: grid;
-    grid-template-columns: 200px 150px 100px;
+    grid-template-columns: 200px 200px 150px;
     column-gap: 10px;
     row-gap: 10px;
     align-items: center;
+    /* padding: 0 100px; */
     padding-bottom: 10px;
+  }
+  .todo-list-grid div{
+    padding-left: 2px;
   }
   
   .todo-input-grid {
@@ -57,7 +65,10 @@ body {
     color: white;
     border: none;
     font-size: 15px;
+
     cursor: pointer;
+    padding-top: 8px;
+    padding-bottom: 8px;
   }
   
   .delete-todo-button {
@@ -65,25 +76,27 @@ body {
     color: white;
     border: none;
     font-size: 15px;
+   
     cursor: pointer;
     padding-top: 10px;
     padding-bottom: 10px;
   }
 
-  @media (max-width:300px) {
+  @media (max-width:600px) {
     main{
       position: absolute;
       top: 70px;
-      width: 97vw;
-      height: 80vh;
+      width: 98vw;
+      height: 75vh;
       /* border: 2px solid black; */
       box-shadow: 5px 5px 50px black;
+      /* padding-left: 50px; */
       padding: 0;
       overflow-y: scroll;
     }
     .todo-list-grid, .todo-input-grid {
       display: grid;
-      grid-template-columns: 70px 70px 60px;
+      grid-template-columns: 35% 35% 21%;
       column-gap: 10px;
       row-gap: 10px;
       align-items: center;
