@@ -79,7 +79,8 @@ function renderTodoList()
         
         deleteButon.addEventListener("click",()=>{
             todolist.splice(index,1)
-            renderTodoList();
+           if(confirm('Are you sure to delete this todo'))
+                renderTodoList();
         });
         count = index;
         // console.log(index);
