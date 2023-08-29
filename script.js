@@ -78,9 +78,11 @@ function renderTodoList()
     deletes.forEach((deleteButon,index)=>{
         
         deleteButon.addEventListener("click",()=>{
-            todolist.splice(index,1)
-           if(confirm('Are you sure to delete this todo'))
-                renderTodoList();
+            if(confirm('Are you sure to delete this todo'))
+            {
+                todolist.splice(index,1)
+                renderTodoList();    
+            }
         });
         count = index;
         // console.log(index);
